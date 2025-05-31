@@ -1,0 +1,78 @@
+/* Estilos globais */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: #0d6efd;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    color: white;
+}
+
+/* Efeito texto invisível que aparece no hover */
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.5) !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-custom .nav-link:hover {
+    color: white !important;
+}
+
+/* Opcional: Linha animada abaixo */
+.navbar-custom .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Cards */
+.card-medico {
+    border-left: 4px solid #198754;
+}
+
+.card-paciente {
+    border-left: 4px solid #0dcaf0;
+}
+
+.card-agenda {
+    border-left: 4px solid #ffc107;
+}
+
+/* Formulários */
+.form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    padding: 2rem;
+}
+
+/* Tabelas */
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
